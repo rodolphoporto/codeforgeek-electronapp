@@ -1,7 +1,7 @@
 #!/bin/sh      
 ssh -T jenkins@178.128.73.43 <<EOF        
  cd /var/lib/jenkins/workspace/codeforgeek-electronapp
- git pull
+ git pull origin master
  npm install --production
  pm2 restart all
  exit
